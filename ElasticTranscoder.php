@@ -2,11 +2,13 @@
 /**
  * Amazon Elastic Transcoder class
  * Version 1.0.2
- * https://github.com/LPology/ElasticTranscoderPHP
+ * https://github.com/w-heredia/aws-elastic-transcoder-php
  *
  * Copyright 2013 LPology, LLC
  * Released under the MIT license
  */
+
+namespace wheredia\aws;
 
 class AWS_ET {
 
@@ -72,13 +74,7 @@ class AWS_ET {
       }
     }
     if (!empty($playlists)) {
-      $requestBody['Playlists'] = array(
-          'Format' => 'HLSv3',
-          'Name' => $playlists['Name']
-      );
-      if (array_key_exists('OutputKeys', $playlists)) {
-        $requestBody['Playlists']['OutputKeys'] = $playlists['OutputKeys'];
-      }
+        $requestBody['Playlists'] = $playlists;
     }
     if (!empty($usermetadata)) {
       $requestBody['UserMetadata'] = $usermetadata;
