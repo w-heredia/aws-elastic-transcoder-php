@@ -1,5 +1,5 @@
 {
-  "name": "wheredia/elastic-transcoder",
+  "name": "wheredia/elastic-transcoder-aws",
   "description": "Amazon Elastic Transcoder.",
   "keywords": ["aws", "elastic transcoder"],
   "homepage": "https://github.com/w-heredia/elastic-transcoder-php",
