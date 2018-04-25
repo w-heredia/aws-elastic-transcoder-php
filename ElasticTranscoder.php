@@ -10,7 +10,7 @@
 
 namespace wheredia\aws;
 
-class AWS_ET {
+class ElasticTranscoder {
 
   private static $AwsAccessKey;
   private static $AwsPrivateKey;
