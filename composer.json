@@ -1,0 +1,23 @@
+{
+  "name": "wheredia/elastic-transcoder",
+  "description": "Amazon Elastic Transcoder.",
+  "keywords": ["aws", "elastic transcoder"],
+  "homepage": "https://github.com/w-heredia/elastic-transcoder-php",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "LPology, LLC",
+      "email": "info@lpology.com",
+      "homepage": "https://www.lpology.com/"
+    }
+  ],
+  "require": {
+    "php": ">=5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "wheredia\\aws\\": ""
+    }
+  }
+}
