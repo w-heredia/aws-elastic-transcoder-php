@@ -529,7 +529,7 @@ class ElasticTranscoder {
   */
   private static function resetProps() {
     self::$Headers = array();
-    self::$Date = new DateTime('UTC');
+    self::$Date = new \DateTime('UTC');
     self::$RequestBody = null;
     self::$ResponseStatus = null;
     self::$Response = null;
